@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{text-align: center;}
+a {
+  color: orangered;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+    height: 85%;
+    width: 100%; }
+  
+    section {
+        font-size: 25px;
+        text-align: center; }
+      
+        main {
+            background-image: url(../imagenes/fondomain.jpg);
+            color: black; }
+          

@@ -1,0 +1,69 @@
+.logoinstagram {width: 20px;
+    height: 20px;}
+  .logofacebook {width: 20px;
+  height: 20px;}
+  .logowhatsapp {width: 20px;
+  height: 20px;}
+
+  
+footer {
+    background-color: goldenrod;
+    color: orangered; }
+  
+    
+  .footergrid {  display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "direccion redes";
+  }
+  
+  .direccion {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hondaburguers"
+      "direccionlocal"
+      "telefono";
+    grid-area: direccion;
+  }
+  
+  .hondaburguers { grid-area: hondaburguers; }
+  
+  .direccionlocal { grid-area: direccionlocal; }
+  
+  .telefono { grid-area: telefono; }
+  
+  .redes {  display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-area: redes;
+  }
+  
+  .instagram { grid-area: 1 / 1 / 2 / 2; }
+  
+  .facebook { grid-area: 2 / 1 / 3 / 2; }
+  
+  .whatsapp { grid-area: 3 / 1 / 4 / 2; }
+  
+  @media (max-width: 420px){
+    .footergrid{
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (1fr 1.6fr 0.4fr);
+        grid-template-areas: 
+        "direccion direccion"
+        "redes redes"
+        ". .";
+    }
+    .footergrid{background-color: orange;
+        color: orangered;}
+
+h3{text-align: center;
+}
+}

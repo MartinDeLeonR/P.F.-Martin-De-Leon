@@ -1,0 +1,282 @@
+.logoinstagram {
+  width: 20px;
+  height: 20px; }
+
+.logofacebook {
+  width: 20px;
+  height: 20px; }
+
+.logowhatsapp {
+  width: 20px;
+  height: 20px; }
+
+footer {
+  background-color: goldenrod;
+  color: orangered; }
+
+.footergrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "direccion redes"; }
+
+.direccion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "hondaburguers" "direccionlocal" "telefono";
+  grid-area: direccion; }
+
+.hondaburguers {
+  grid-area: hondaburguers; }
+
+.direccionlocal {
+  grid-area: direccionlocal; }
+
+.telefono {
+  grid-area: telefono; }
+
+.redes {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-area: redes; }
+
+.instagram {
+  grid-area: 1 / 1 / 2 / 2; }
+
+.facebook {
+  grid-area: 2 / 1 / 3 / 2; }
+
+.whatsapp {
+  grid-area: 3 / 1 / 4 / 2; }
+
+@media (max-width: 420px) {
+  .footergrid {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 1fr 1.6fr 0.4fr;
+    grid-template-areas: "direccion direccion" "redes redes" ". ."; }
+  .footergrid {
+    background-color: orange;
+    color: orangered; }
+  h3 {
+    text-align: center; } }
+
+.gridinicio {
+  display: grid;
+  grid-template-columns: repeat 3, 1fr;
+  grid-template-rows: repeat 2, 1 fr;
+  grid-gap: 15px;
+  grid-template-areas: "i1 i2 i3" "i4 i5 i6"; }
+
+@media (max-width: 420px) {
+  .gridinicio {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 3, 1fr;
+    grid-template-areas: "i1 i2" "i3 i4" "i5 i6"; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main {
+  text-align: center; }
+
+a {
+  color: orangered;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+img {
+  height: 85%;
+  width: 100%; }
+
+section {
+  font-size: 25px;
+  text-align: center; }
+
+main {
+  background-image: url(../imagenes/fondomain.jpg);
+  color: black; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.3fr 0,3fr 0.3fr;
+  gap: 3px 4px;
+  grid-template-areas: "mp1 mp2 mp3" "mp7 mp8 mp9" "m1 m2 m3" "mp4 mp5 mp6" "mp10 mp11 mp12" "m4 m5 m6"; }
+
+.m1 {
+  grid-area: m1; }
+
+.m2 {
+  grid-area: m2; }
+
+.m3 {
+  grid-area: m3; }
+
+.mp1 {
+  grid-area: mp1; }
+
+.mp2 {
+  grid-area: mp2; }
+
+.mp3 {
+  grid-area: mp3; }
+
+.m4 {
+  grid-area: m4; }
+
+.mp4 {
+  grid-area: mp4; }
+
+.m5 {
+  grid-area: m5; }
+
+.mp5 {
+  grid-area: mp5; }
+
+.m6 {
+  grid-area: m6; }
+
+.mp6 {
+  grid-area: mp6; }
+
+.mp1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp4 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp5 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp6 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp7 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp8 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp9 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp10 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp11 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mp12 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  font-size: 2rem; }
+
+@media (max-width: 420px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,3fr 0.3fr 0,3fr 0.3fr 0,3fr 0.3fr;
+    gap: 3px 4px;
+    grid-template-areas: "mp1 mp2" "mp7 mp8" "m1 m2" "mp3 mp4" "mp9 mp10" "m3 m4" "mp5 mp6" "mp11 mp12" "m5 m6";
+    align-content: stretch;
+    justify-items: center;
+    font-size: 15px; } }
+
+.gridubicacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . ." "ubicaciontx ubicaciontx ubicacionmaps ubicacionmaps" "ubicaciontx ubicaciontx ubicacionmaps ubicacionmaps" ". . . ."; }
+
+.ubicaciontx {
+  grid-area: ubicaciontx;
+  font-size: 30px;
+  color: black; }
+
+.ubicaciontx {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ubicacionmaps {
+  grid-area: ubicacionmaps; }
+
+@media (max-width: 420px) {
+  .gridubicacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3px 4px;
+    grid-template-areas: "ubicaciontx" "ubicacionmaps";
+    align-content: stretch;
+    justify-items: center;
+    font-size: 15px; } }
+
+.navbar-custom {
+  background-color: orangered;
+  color: goldenrod; }
+
+body
+header h1 {
+  margin: 0% auto;
+  text-align: center;
+  font-size: 2rem;
+  color: orangered; }
+
+header h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: orangered; }
+
+header {
+  background-color: goldenrod; }
+
+.navbar-custom {
+  background-color: orangered;
+  color: goldenrod; }
